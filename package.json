@@ -1,0 +1,16 @@
+{
+  "name": "yt-playlist-sorter",
+  "version": "1.0.0",
+  "description": "Sorts a YouTube playlist by upload date (oldest first)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "alefnull",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "usetube": "^2.1.3"
+  }
+}
