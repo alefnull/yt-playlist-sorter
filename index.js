@@ -1,7 +1,7 @@
 const usetube = require('usetube');
-const chalk = require('chalk');
+const { yellow } = require('chalk');
 const plist_id = process.argv[2];
-console.log(chalk.yellow('\nfetching playlist and sorting by upload date. please hold...'));
+console.log(yellow('\nfetching playlist and sorting by upload date. please hold...'));
 (async () => {
 	const playlist = await usetube.getPlaylistVideos(plist_id);
 	const videos = playlist.sort((a, b) => {
@@ -18,8 +18,8 @@ console.log(chalk.yellow('\nfetching playlist and sorting by upload date. please
 		strings.push(`${video.title} (${date})`);
 		ids.push(video.id);
 	}
-	console.log(`\n${chalk.yellow('sorted playlist:')}`)
-	console.log(chalk.blue(strings.join('\n')));
-	console.log(`\n${chalk.yellow('watch your sorted playlist at:')}`);
-	console.log(chalk.blue('https://www.youtube.com/watch_videos?video_ids=' + ids.join(',')));
+	console.log(`\n${yellow('sorted playlist:')}`)
+	console.log(strings.join('\n'));
+	console.log(`\n${yellow('watch your sorted playlist at:')}`);
+	console.log('https://www.youtube.com/watch_videos?video_ids=' + ids.join(','));
 })();
