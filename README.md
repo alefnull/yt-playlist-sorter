@@ -2,4 +2,5 @@
 Sorts a YouTube playlist by upload date (oldest first)
 
 # Usage
-```node index.js YOUTUBE_PLAYLIST_ID```
+1. ```npm install```
+2. ```node index.js YOUTUBE_PLAYLIST_ID```
