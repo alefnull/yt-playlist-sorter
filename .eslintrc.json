@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true
+  },
+  "globals": {
+    "process": "readonly",
+    "__dirname": "readonly"
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "accessor-pairs": ["error", { "getWithoutSet": true, "setWithoutGet": true }],
+    "block-scoped-var": "error",
+    "class-methods-use-this": "error",
+    "comma-dangle": ["error", "never"],
+    "curly": ["error", "all"],
+    "default-case": "error",
+    "default-case-last": "error",
+    "default-param-last": "error",
+    "dot-location": ["error", "property"],
+    "dot-notation": "error",
+    "eqeqeq": ["error", "smart"],
+    "grouped-accessor-pairs": ["error", "getBeforeSet"],
+    "guard-for-in": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["error", "windows"],
+    "max-classes-per-file": ["error", 1],
+    "no-constructor-return": "error",
+    "no-div-regex": "error",
+    "no-else-return": ["error", { "allowElseIf": false }],
+    "no-empty-function": ["error", { "allow": ["getters", "setters"] }],
+    "no-empty-pattern": "error",
+    "no-eval": ["error", { "allowIndirect": true }],
+    "no-extra-bind": "error",
+    "no-extra-label": "error",
+    "no-fallthrough": "error",
+    "no-floating-decimal": "error",
+    "no-invalid-this": "error",
+    "no-loop-func": "error",
+    "no-multi-spaces": "error",
+    "no-multi-str": "error",
+    "no-unused-vars": "warn",
+    "no-useless-return": "error",
+    "quotes": ["error", "single"],
+    "require-await": "error",
+    "semi": ["error", "always"],
+    "wrap-iife": ["error", "inside"]
+  }
+}
